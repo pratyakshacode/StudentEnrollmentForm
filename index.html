@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="grid-container">
+
+            <!-- div for the form to be filled by the user -->
+        <div class="item item1">
+            <div id="row1col1">
+                <h1>Fill Your Details Here</h1>
+            </div>
+           <div id="row1col2">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" autocomplete="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone"required>
+                <label for="adhar">Aadhaar Card Number</label>
+                <input type="text" name="adhar" id="adhar" required>
+                <label for="address">Your Address</label>
+                <input type="text" name="address" id="address" required>
+                <button type="submit" id="submit">Submit Details</button>
+            </form>
+
+        </div>
+        </div>
+
+        <!-- div for the card details filled by the user -->
+
+        <div class="item item2">
+            <!-- div for heading  -->
+            <div id="row2col1"><h2>Your Details Shown Here</h2></div>
+
+            <!-- div for the content of the form filled by the user -->
+            <div id="row2col2">
+
+                <div class="card">
+                    <div id="image"><img src="./avatar4.png"></div>
+                    
+                    <div id="content">
+                        <table>
+
+                            <tr>
+                                <td>Name :</td>
+                                <td id="tname"  class="inp">Unknown</td>
+                            </tr>
+                            <tr>
+                                <td>Email :</td>
+                                <td id="temail" class="inp"> 123@email.com</td>
+                            </tr>
+
+                            <tr>
+                                <td>Phone Number :</td>
+                                <td id="tphone" class="inp">123456</td>
+                            </tr>
+
+                            <tr>
+                                <td>Aadhar Card Number :</td>
+                                <td id="tadhar" class="inp">1122112211221122</td>
+                            </tr>
+
+                            <tr>
+                                <td>Your Address :</td>
+                                <td id="taddress" class="inp">India</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button id="next">Next</button>
+            </div>
+
+
+        </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

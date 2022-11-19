@@ -1,0 +1,147 @@
+.grid-container{
+    display: grid;
+  grid-template-columns: auto auto ;
+  /* grid-template-rows: auto auto; */
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  border-radius: 10px;
+  width: 94rem;
+  /* box-sizing: border-box; */
+    /* box-shadow: 0px 0px 0px 10px #2196F3; */
+}
+
+.item{
+   border:2px solid black
+}
+.col{
+    border: 2px solid red;
+}
+
+/* column 1 styling for the form */
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 10px;
+    border: 0px;
+}
+#row1col2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.item2{
+    grid-column-start: 5;
+    grid-column-end: 12;
+    border: 0px;
+}
+input{
+    display: block;
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgb(4, 54, 77);
+    border-radius: 8px;
+    margin: 10px;
+
+}
+#row1col1{
+    background-color: white;
+    text-align: center;
+    padding: 1px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+#submit{
+    padding: 8px;
+    border: 0px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: #0ab741;
+    color: white;
+    font-weight: bold;
+}
+form {
+    font-weight: bolder;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+/* column 2 styling to add the card of details */
+
+.item2{
+    background-color: white;
+    border-radius: 10px;
+}
+#row2col1{
+    text-align: center;
+}
+#row2col2{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* border-ra */
+}
+.card{
+    display: grid;
+    /* display: none; */
+    grid-template-columns: auto auto;
+    border: 2px solid black;
+    width: 400px;
+    justify-self: center;
+    margin:0px auto;
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #0872c9;
+}
+#image{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-items: center;
+    border: 2px solid #2196F3;
+    border-radius: 8px;
+    justify-content: center;
+    padding: 0;
+    background-color: white;
+}
+#content{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    border: 2px solid #2196F3;
+    border-radius: 8px;
+    background-color: rgb(177, 229, 255);
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    color: #00070c;
+}
+.card img{
+    height:140px;
+    width: 120px;
+    margin: 0px;
+}
+#next{
+    display: none;
+    padding: 8px 20px;
+    border: 0px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: #e62626;
+    color: white;
+    font-weight: bold;
+}
+
+
